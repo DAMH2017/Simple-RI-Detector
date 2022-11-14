@@ -220,7 +220,7 @@ class Device < DeviceWrapper
 	end
 	
 	def CmdStartAcquisition
-		Monitor.SetState("Running")
+		Monitor().SetState("Running")
 		Monitor().SetButtonEnable("AutoZeroButton",false)
 		Monitor().SetButtonEnable("PurgeButton",false)
 		Monitor().SetButtonEnable("PolaritySwitchButton",false)
